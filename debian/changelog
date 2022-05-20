@@ -1,0 +1,5 @@
+amphp-cache (1.5.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #1011326).
+
+ -- Katharina Drexel <katharina.drexel@bfh.ch>  Wed, 04 May 2022 09:32:24 +0200

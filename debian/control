@@ -1,0 +1,33 @@
+Source: amphp-cache
+Section: php
+Priority: optional
+Maintainer: Katharina Drexel <katharina.drexel@bfh.ch>
+Build-Depends:
+ debhelper-compat (= 13),
+ phpab,
+ pkg-php-tools,
+Rules-Requires-Root: no
+Standards-Version: 4.6.1
+Homepage: https://github.com/amphp/cache
+Vcs-Browser: https://github.com/amphp/cache
+Vcs-Git: https://github.com/sunflowerbofh/php-amphp-cache.git
+
+Package: php-amphp-cache
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${phpcomposer:Debian-require},
+Suggests:
+ ${phpcomposer:Debian-suggest},
+Replaces:
+ ${phpcomposer:Debian-replace},
+Breaks:
+ php-amphp-file (<< 0.2),
+ php-amphp-file (>= 3),
+Provides:
+ ${phpcomposer:Debian-provide},
+Description: Promise-aware caching API for Amp
+ Amp is a non-blocking concurrency framework for PHP. It provides an event loop,
+ promises and streams as a base for asynchronous programming.
+ .
+ amphp/cache is a non-blocking caching library for Amp.
